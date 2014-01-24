@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/wallpaper2"
+     style ="@style/AppTheme" >
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnAudio"
+        style ="@style/AppTheme"
+        android:text="BlueTooth" />
+
+    <Button
+        android:id="@+id/btnWifi"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnAudio"
+        style ="@style/AppTheme"
+        android:text="WiFi" />
+
+    <TextView
+        android:id="@+id/tvAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style ="@style/AppTheme"
+        android:text="Audio" />
+
+    <SeekBar
+        android:id="@+id/sbAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:id="@+id/btnAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sbAudio"
+        android:layout_centerHorizontal="true"
+        style ="@style/AppTheme"
+        android:text="audio" />
+
+    <Button
+        android:id="@+id/btnWifiState"
+        style ="@style/AppTheme"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnWifi"
+        android:layout_below="@+id/btnWifi"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btnBluetoothState"
+        
+      style ="@style/AppTheme"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBluetooth"
+        android:layout_toRightOf="@+id/btnAudio"
+        android:text="Pair"
+         />
+
+</RelativeLayout>

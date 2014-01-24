@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp" 
+    android:background="@drawable/wallpaper1"
+    android:layout_gravity="center" >
+#FF9900
+      
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Large Text"
+          style="@style/AppTheme"
+       />
+
+    <Button
+        android:id="@+id/btnTurrnOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvMessage"
+        android:text="Procceed" 
+          style="@style/AppTheme"/>
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTurrnOFF"
+        android:layout_alignBottom="@+id/btnTurrnOFF"
+        android:layout_alignParentRight="true"
+        android:text="Cancel"
+  style="@style/AppTheme"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle"
+        android:background="#FF9900" />
+
+</RelativeLayout>
